@@ -1,0 +1,82 @@
+.create-channel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 56px);
+  padding: 20px;
+}
+
+.create-channel-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.create-channel-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 24px;
+}
+
+.error-message {
+  padding: 10px;
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef5350;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.create-channel-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.create-channel-box input,
+.create-channel-box textarea {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.create-channel-box input:focus,
+.create-channel-box textarea:focus {
+  border-color: #065fd4;
+}
+
+.create-btn {
+  padding: 12px;
+  background-color: #065fd4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.create-btn:hover {
+  background-color: #0551c2;
+}
+
+@media (max-width: 480px) {
+  .create-channel-box {
+    padding: 30px 20px;
+  }
+
+  .create-channel-box h2 {
+    font-size: 20px;
+  }
+}
