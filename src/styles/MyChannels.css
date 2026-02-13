@@ -1,0 +1,96 @@
+.my-channels-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.my-channels-container h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #030303;
+}
+
+.no-channels {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.no-channels p {
+  font-size: 18px;
+  color: #606060;
+  margin-bottom: 20px;
+}
+
+.no-channels button {
+  padding: 12px 24px;
+  background-color: #065fd4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.no-channels button:hover {
+  background-color: #0551c2;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.channel-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.channel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.channel-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.channel-card h3 {
+  padding: 16px 16px 8px;
+  font-size: 18px;
+  color: #030303;
+}
+
+.channel-card p {
+  padding: 0 16px 8px;
+  font-size: 14px;
+  color: #606060;
+}
+
+.channel-card p:last-child {
+  padding-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .channels-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+  }
+
+  .my-channels-container h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .channels-grid {
+    grid-template-columns: 1fr;
+  }
+}
